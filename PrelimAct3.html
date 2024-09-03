@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Sheet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nerko+One&display=swap" rel="stylesheet">
+    <style>
+      body{
+        background-color: #BBE9FF;
+      }
+
+      form{
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: dashed;
+      }
+
+      .text-center{
+        padding-top: 30px;
+        font-family: "Nerko One", cursive;
+        font-size: 50px;
+      }
+
+      img{
+        width:70px;
+        height: 70px;
+      }
+      .req {
+        color: red;
+      }
+
+      .date-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .date-row img {
+        padding-right: 100px;
+        width: 300px;
+        height:300px;
+      }
+    </style>
+</head>
+<body>
+  <div class="container mt-6">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-auto">
+        <img src="https://static.vecteezy.com/system/resources/previews/009/663/676/non_2x/pencil-icon-transparent-free-png.png" alt="Pencil Icon">
+    </div>
+        <div class="col-auto">
+            <h2 class="text-center">Student Information Sheet</h2>
+        </div>
+        <div class="col-auto">
+            <img src="https://static.vecteezy.com/system/resources/previews/009/663/676/non_2x/pencil-icon-transparent-free-png.png" alt="Pencil Icon">
+        </div>
+    </div>
+        <form>
+            <div class="mb-3 row">
+                <div class="col-md-6">
+                    <label for="studentName" class="form-label">Student's Name: <span class=req>*</span></label>
+                    <input type="text" class="form-control" id="studentName" name="studentName">
+                </div>
+                <div class="col-md-2">
+                    <label for="age" class="form-label">Age: <span class=req>*</span></label>
+                    <input type="number" class="form-control" id="age" name="age">
+                </div>
+                <div class="col-md-4">
+                    <label for="gender" class="form-label">Male/Female: <span class=req>*</span></label>
+                    <input type="text" class="form-control" id="gender" name="gender">
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-md-6">
+                    <label for="birthdate" class="form-label">Birthdate: <span class=req>*</span></label>
+                    <input type="date" class="form-control" id="birthdate" name="birthdate">
+                </div>
+                <div class="col-md-6">
+                    <label for="address" class="form-label">Address: <span class=req>*</span></label>
+                    <input type="text" class="form-control" id="address" name="address">
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-md-6">
+                    <label for="guardianName" class="form-label">Guardian's Name(s): <span class=req>*</span></label>
+                    <input type="text" class="form-control" id="guardianName" name="guardianName">
+                </div>
+                <div class="col-md-6">
+                    <label for="religion" class="form-label">Religion:</label>
+                    <input type="text" class="form-control" id="religion" name="religion">
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-md-6">
+                    <label for="relationship" class="form-label">Relationship to student: <span class=req>*</span></label>
+                    <input type="text" class="form-control" id="relationship" name="relationship">
+                </div>
+                <div class="col-md-6">
+                    <label for="telephone" class="form-label">Telephone: <span class=req>*</span></label>
+                    <input type="tel" class="form-control" id="telephone" name="telephone">
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-md-6">
+                    <label for="familyEmail" class="form-label">Family Email:</label>
+                    <input type="email" class="form-control" id="familyEmail" name="familyEmail">
+                </div>
+                <div class="col-md-6">
+                    <label for="contactMethod" class="form-label">Best way to contact you:</label>
+                    <input type="text" class="form-control" id="contactMethod" name="contactMethod">
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-md-6">
+                    <label for="emergencyContact" class="form-label">Emergency Contact Name: <span class=req>*</span></label>
+                    <input type="text" class="form-control" id="emergencyContact" name="emergencyContact">
+                </div>
+                <div class="col-md-6">
+                    <label for="emergencyPhone" class="form-label">Telephone: <span class=req>*</span></label>
+                    <input type="tel" class="form-control" id="emergencyPhone" name="emergencyPhone">
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-md-6">
+                    <label for="motherName" class="form-label">Mother's Name: <span class=req>*</span></label>
+                    <input type="text" class="form-control" id="motherName" name="motherName">
+                </div>
+                <div class="col-md-6">
+                    <label for="motherWorkplace" class="form-label">Workplace:</label>
+                    <input type="text" class="form-control" id="motherWorkplace" name="motherWorkplace">
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-md-6">
+                    <label for="fatherName" class="form-label">Father's Name: <span class=req>*</span></label>
+                    <input type="text" class="form-control" id="fatherName" name="fatherName">
+                </div>
+                <div class="col-md-6">
+                    <label for="fatherWorkplace" class="form-label">Workplace:</label>
+                    <input type="text" class="form-control" id="fatherWorkplace" name="fatherWorkplace">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="medicalIssues" class="form-label">Medical Issues/Allergies/Medication: <span class=req>*</span></label>
+                <textarea class="form-control" id="medicalIssues" name="medicalIssues" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="academicChallenges" class="form-label">Academic Challenges:</label>
+                <textarea class="form-control" id="academicChallenges" name="academicChallenges" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="device" class="form-label">Does your child have a device?</label>
+                <input type="text" class="form-control" id="device" name="device">
+            </div>
+
+            <div class="mb-3">
+                <label for="deviceType" class="form-label">What kind of device is your child using?</label>
+                <input type="text" class="form-control" id="deviceType" name="deviceType">
+            </div>
+
+            <div class="mb-3">
+                <label for="internetIssues" class="form-label">Do you have any issues with the internet?</label>
+                <input type="text" class="form-control" id="internetIssues" name="internetIssues">
+            </div>
+
+            <div class="mb-3">
+                <label for="relatives" class="form-label">Names of any relatives attending the school and grade they are in:</label>
+                <textarea class="form-control" id="relatives" name="relatives" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3 date-row">
+              <div class="col-md-6">
+                <label for="date" class="form-label">Date:</label>
+                <input type="date" class="form-control" id="date" name="date">
+              </div>
+              <img src="https://png.pngtree.com/png-clipart/20230825/original/pngtree-happy-school-children-with-stack-of-book-picture-image_8674630.png" alt="students">
+            </div>
+      
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
